@@ -139,7 +139,7 @@ const DashBoardLayout = () => {
               containerClassName="inline-block mr-1"
             >
               <span className="relative z-10">Dashboard</span>
-            </PointerHighlight>{" "}
+            </PointerHighlight>
             Workspace
           </h1>
         </div>

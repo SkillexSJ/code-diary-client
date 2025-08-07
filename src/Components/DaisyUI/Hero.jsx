@@ -22,10 +22,10 @@ const Hero = () => {
             delay={150}
             animateBy="words"
             direction="top"
-            className=" text-5xl  text-left lg:text-[89.72px]"
+            className=" text-5xl text-white text-left lg:text-[99.92px]"
           />
         </div>
-        <p className="block text-center text-sm sm:text-base">
+        <p className="block text-center text-base md:text-lg">
           Code Diary is a platform where you can share your code with others.
           You can also learn from others by reading their code.
         </p>

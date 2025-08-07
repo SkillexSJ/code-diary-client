@@ -10,6 +10,7 @@ import {
   IconBrandLinkedin,
   IconBrandTwitter,
 } from "@tabler/icons-react";
+import { PointerHighlight } from "../../Components/Ui/PointerHighlight";
 
 const socialLinks = [
   {
@@ -69,10 +70,17 @@ const About = () => {
         >
           <h1
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight
-          bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600
-          bg-clip-text text-transparent animate-text-glow"
+          
+          "
           >
-            About the Creator
+            <PointerHighlight
+              rectangleClassName="bg-neutral-200 dark:bg-[#6b46c1] dark:border-neutral-600 leading-loose"
+              pointerClassName=" h-3 w-3"
+              containerClassName="inline-block mr-1"
+            >
+              <span className="relative z-10">About</span>
+            </PointerHighlight>{" "}
+            The Author
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl leading-relaxed text-purple-300">

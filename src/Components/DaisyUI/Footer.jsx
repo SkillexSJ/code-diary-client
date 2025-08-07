@@ -9,14 +9,25 @@ import {
   IconBrandTwitter,
 } from "@tabler/icons-react";
 import TextPressure from "../Ui/TextPressure";
+import { PointerHighlight } from "../Ui/PointerHighlight";
 
 const Footer = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center">
-        <p className="mb-2">FOLLOW ME</p>
+        <p className="tracking-widest text-5xl">
+          {" "}
+          <PointerHighlight
+            rectangleClassName="bg-neutral-200 dark:bg-[#6b46c1] dark:border-neutral-600 leading-loose"
+            pointerClassName=" h-3 w-3"
+            containerClassName="inline-block mr-1"
+          >
+            <span className="relative z-10">CREATED</span>
+          </PointerHighlight>
+          BY
+        </p>
         {/* <h1 className="text-[82.4px] text-white tracking-widest">SKILLEX</h1> */}
-        <div>
+        {/* <div>
           <FloatingDock
             desktopClassName="bg-white"
             mobileClassName={"hidden"}
@@ -63,7 +74,7 @@ const Footer = () => {
               <IconBrandInstagram className="text-[#E4405F]" />
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="w-screen mb-5 opacity-50">
           <TextPressure
             text="SKILLEX"

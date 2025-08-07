@@ -1,12 +1,20 @@
 import React from "react";
 import ScrollVelocity from "../../../Components/Ui/ScrollVelocity";
+import { PointerHighlight } from "../../../Components/Ui/PointerHighlight";
 
 const Contact = () => {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center gap-10 px-4 text-center">
       <div>
         <h1 className="text-4xl text-white md:text-[64px] lg:text-[89.76px] font-bold">
-          Supported Languages
+          Supported{" "}
+          <PointerHighlight
+            rectangleClassName="bg-neutral-200 dark:bg-[#6b46c1] dark:border-neutral-600 leading-loose"
+            pointerClassName=" h-3 w-3"
+            containerClassName="inline-block mr-1"
+          >
+            <span className="relative z-10">Languages</span>
+          </PointerHighlight>
         </h1>
       </div>
       <div className="w-full overflow-hidden">
