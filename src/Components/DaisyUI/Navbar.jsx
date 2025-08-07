@@ -154,7 +154,7 @@ const Navbar = () => {
 
               <li className="hover:bg-[#6b46c1]">
                 <button className="hover:text-xl" onClick={handleLogout}>
-                  Logout
+                  {user ? "Logout" : "Login"}
                 </button>
               </li>
             </ul>
