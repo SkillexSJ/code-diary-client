@@ -64,6 +64,14 @@ const DashBoardLayout = () => {
       return;
     }
 
+    const languageMap = {
+      cpp: "C++",
+      c: "C",
+      java: "Java",
+      python: "Python",
+      javascript: "JavaScript",
+    };
+
     const dataToSave = {
       userEmail: user.email,
       title,
@@ -91,14 +99,6 @@ const DashBoardLayout = () => {
       .catch(() => {
         notifyError();
       });
-  };
-
-  const languageMap = {
-    cpp: "C++",
-    c: "C",
-    java: "Java",
-    python: "Python",
-    javascript: "JavaScript",
   };
 
   const getLanguageExtension = (lang) => {
