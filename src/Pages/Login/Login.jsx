@@ -63,9 +63,10 @@ const Login = () => {
 
       setUser(googleUser);
       notifySuccess("Google sign-up successful!");
-      navigate(location.state || "/");
+      navigate("/");
     } catch (err) {
       setError(err.message);
+      navigate("/");
       notifyError(error, "Google sign-up failed.");
     }
   };
